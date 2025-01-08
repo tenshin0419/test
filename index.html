@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#007BFF">
+  <link rel="manifest" href="manifest.json">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 100!</p>
+    <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+    <button id="submitGuess">Submit Guess</button>
+    <p id="hint"></p>
+    <p id="attempts">Attempts: 0</p>
+    <div id="celebration" class="hidden">🎉 Congratulations! 🎉</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
